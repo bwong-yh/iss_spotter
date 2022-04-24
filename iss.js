@@ -61,7 +61,7 @@ const nextISSTimesForMyLocation = cb => {
       fetchISSFlyOverTimes(coords, (err, times) => {
         if (err) return cb(err, null);
 
-        cb(null, times);
+        cb(null, times.response);
       });
     });
   });
